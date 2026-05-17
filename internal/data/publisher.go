@@ -10,11 +10,19 @@ import (
 
 const orderConfirmedSubject = "orders.order.confirmed"
 
+type OrderConfirmedEventItem struct {
+	ProductID int64  `json:"product_id"`
+	Quantity  string `json:"quantity"`
+}
+
 type OrderConfirmedEvent struct {
-	TenantID       int64  `json:"tenant_id"`
-	OrderID        int64  `json:"order_id"`
-	CounterpartyID int64  `json:"counterparty_id"`
-	Timestamp      string `json:"timestamp"`
+	TenantID          int64                     `json:"tenant_id"`
+	OrderID           int64                     `json:"order_id"`
+	CounterpartyID    int64                     `json:"counterparty_id"`
+	Items             []OrderConfirmedEventItem `json:"items"`
+	SourceWarehouseID int64                     `json:"source_warehouse_id"`
+	TargetWarehouseID int64                     `json:"target_warehouse_id"`
+	Timestamp         string                    `json:"timestamp"`
 }
 
 type OrderConfirmedPublisher interface {

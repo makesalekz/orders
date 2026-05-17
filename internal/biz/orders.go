@@ -71,11 +71,20 @@ func (uc *OrdersUsecase) transition(ctx context.Context, tenantID, id int64, tar
 
 	// Publish event on CONFIRMED
 	if target == enum.Confirmed {
-		uc.publisher.Publish(data.OrderConfirmedEvent{
+		event := data.OrderConfirmedEvent{
 			TenantID:       updated.TenantID,
 			OrderID:        updated.ID,
 			CounterpartyID: updated.CounterpartyID,
-		})
+		}
+		if updated.Edges.Items != nil {
+			for _, item := range updated.Edges.Items {
+				event.Items = append(event.Items, data.OrderConfirmedEventItem{
+					ProductID: item.ProductID,
+					Quantity:  item.Quantity.String(),
+				})
+			}
+		}
+		uc.publisher.Publish(event)
 	}
 
 	return updated, nil
