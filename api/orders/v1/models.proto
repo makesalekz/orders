@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package orders.v1;
+
+option go_package = "gitlab.calendaria.team/services/orders/api/orders/v1;orders_v1";
+
+enum OrderStatus {
+  CREATED = 0;
+  CONFIRMED = 1;
+  SHIPPED = 2;
+  ACCEPTED = 3;
+  REJECTED = 4;
+}
+
+message Order {
+  int64 id = 1;
+  int64 tenant_id = 2;
+  int64 counterparty_id = 3;
+  OrderStatus status = 4;
+  int64 created_by = 5;
+  string created_at = 6;
+  string updated_at = 7;
+  repeated OrderItem items = 8;
+}
+
+message OrderItem {
+  int64 id = 1;
+  int64 order_id = 2;
+  int64 product_id = 3;
+  string quantity = 4;
+  string unit_price = 5;
+}
+
+message OrderSuggestion {
+  int64 product_id = 1;
+  string current_quantity = 2;
+  string min_quantity = 3;
+}
