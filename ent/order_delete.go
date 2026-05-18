@@ -8,8 +8,8 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"gitlab.calendaria.team/services/orders/ent/order"
-	"gitlab.calendaria.team/services/orders/ent/predicate"
+	"github.com/makesalekz/orders/ent/order"
+	"github.com/makesalekz/orders/ent/predicate"
 )
 
 // OrderDelete is the builder for deleting a Order entity.

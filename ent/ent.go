@@ -12,8 +12,8 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
-	"gitlab.calendaria.team/services/orders/ent/order"
-	"gitlab.calendaria.team/services/orders/ent/orderitem"
+	"github.com/makesalekz/orders/ent/order"
+	"github.com/makesalekz/orders/ent/orderitem"
 )
 
 // ent aliases to avoid import conflicts in user's code.

@@ -142,6 +142,10 @@ github.com/lib/pq/internal/proto
 github.com/lib/pq/oid
 github.com/lib/pq/pqerror
 github.com/lib/pq/scram
+# github.com/makesalekz/utils v0.0.0-00010101000000-000000000000 => ../utils
+## explicit; go 1.21
+github.com/makesalekz/utils/api/utils/v1
+github.com/makesalekz/utils/v2/auth
 # github.com/mitchellh/go-wordwrap v1.0.1
 ## explicit; go 1.14
 github.com/mitchellh/go-wordwrap
@@ -181,10 +185,6 @@ github.com/zclconf/go-cty/cty/set
 # github.com/zclconf/go-cty-yaml v1.1.0
 ## explicit; go 1.17
 github.com/zclconf/go-cty-yaml
-# gitlab.calendaria.team/services/utils v0.0.0-00010101000000-000000000000 => ../utils
-## explicit; go 1.21
-gitlab.calendaria.team/services/utils/api/utils/v1
-gitlab.calendaria.team/services/utils/v2/auth
 # go.opentelemetry.io/auto/sdk v1.2.1
 ## explicit; go 1.24.0
 go.opentelemetry.io/auto/sdk
@@ -386,4 +386,4 @@ google.golang.org/protobuf/types/known/wrapperspb
 # gopkg.in/yaml.v3 v3.0.1
 ## explicit
 gopkg.in/yaml.v3
-# gitlab.calendaria.team/services/utils => ../utils
+# github.com/makesalekz/utils => ../utils

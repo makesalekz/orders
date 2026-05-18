@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package orders.v1;
 
-option go_package = "gitlab.calendaria.team/services/orders/api/orders/v1;orders_v1";
+option go_package = "github.com/makesalekz/orders/api/orders/v1;orders_v1";
 
 enum OrderStatus {
   CREATED = 0;

@@ -12,8 +12,8 @@ import (
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
 	"github.com/shopspring/decimal"
-	"gitlab.calendaria.team/services/orders/ent/order"
-	"gitlab.calendaria.team/services/orders/ent/orderitem"
+	"github.com/makesalekz/orders/ent/order"
+	"github.com/makesalekz/orders/ent/orderitem"
 )
 
 // OrderItemCreate is the builder for creating a OrderItem entity.

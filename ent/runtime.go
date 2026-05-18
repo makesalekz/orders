@@ -5,9 +5,9 @@ package ent
 import (
 	"time"
 
-	"gitlab.calendaria.team/services/orders/ent/order"
-	"gitlab.calendaria.team/services/orders/ent/orderitem"
-	"gitlab.calendaria.team/services/orders/ent/schema"
+	"github.com/makesalekz/orders/ent/order"
+	"github.com/makesalekz/orders/ent/orderitem"
+	"github.com/makesalekz/orders/ent/schema"
 )
 
 // The init function reads all schema descriptors with runtime code

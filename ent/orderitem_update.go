@@ -12,8 +12,8 @@ import (
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
 	"github.com/shopspring/decimal"
-	"gitlab.calendaria.team/services/orders/ent/orderitem"
-	"gitlab.calendaria.team/services/orders/ent/predicate"
+	"github.com/makesalekz/orders/ent/orderitem"
+	"github.com/makesalekz/orders/ent/predicate"
 )
 
 // OrderItemUpdate is the builder for updating OrderItem entities.

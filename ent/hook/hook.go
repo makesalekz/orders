@@ -6,7 +6,7 @@ import (
 	"context"
 	"fmt"
 
-	"gitlab.calendaria.team/services/orders/ent"
+	"github.com/makesalekz/orders/ent"
 )
 
 // The OrderFunc type is an adapter to allow the use of ordinary

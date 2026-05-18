@@ -9,8 +9,8 @@ import (
 
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
-	"gitlab.calendaria.team/services/orders/ent/enum"
-	"gitlab.calendaria.team/services/orders/ent/order"
+	"github.com/makesalekz/orders/ent/enum"
+	"github.com/makesalekz/orders/ent/order"
 )
 
 // Order is the model entity for the Order schema.

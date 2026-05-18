@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"gitlab.calendaria.team/services/orders/ent"
-	"gitlab.calendaria.team/services/orders/ent/enum"
-	"gitlab.calendaria.team/services/orders/internal/data"
-	utils_v1 "gitlab.calendaria.team/services/utils/api/utils/v1"
+	"github.com/makesalekz/orders/ent"
+	"github.com/makesalekz/orders/ent/enum"
+	"github.com/makesalekz/orders/internal/data"
+	utils_v1 "github.com/makesalekz/utils/api/utils/v1"
 
 	"github.com/go-kratos/kratos/v2/log"
 )

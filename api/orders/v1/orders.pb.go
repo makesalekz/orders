@@ -7,7 +7,7 @@
 package orders_v1
 
 import (
-	v1 "gitlab.calendaria.team/services/utils/api/utils/v1"
+	v1 "github.com/makesalekz/utils/api/utils/v1"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -883,7 +883,7 @@ const file_api_orders_v1_orders_proto_rawDesc = "" +
 	"\vRejectOrder\x12\x1d.orders.v1.RejectOrderRequest\x1a\x1b.orders.v1.RejectOrderReply\x12a\n" +
 	"\x13GetOrderSuggestions\x12%.orders.v1.GetOrderSuggestionsRequest\x1a#.orders.v1.GetOrderSuggestionsReply\x12F\n" +
 	"\n" +
-	"ListOrders\x12\x1c.orders.v1.ListOrdersRequest\x1a\x1a.orders.v1.ListOrdersReplyB@Z>gitlab.calendaria.team/services/orders/api/orders/v1;orders_v1b\x06proto3"
+	"ListOrders\x12\x1c.orders.v1.ListOrdersRequest\x1a\x1a.orders.v1.ListOrdersReplyB@Z>github.com/makesalekz/orders/api/orders/v1;orders_v1b\x06proto3"
 
 var (
 	file_api_orders_v1_orders_proto_rawDescOnce sync.Once

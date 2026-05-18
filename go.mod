@@ -1,4 +1,4 @@
-module gitlab.calendaria.team/services/orders
+module github.com/makesalekz/orders
 
 go 1.25.0
 
@@ -7,10 +7,10 @@ require (
 	github.com/go-kratos/kratos/v2 v2.9.2
 	github.com/google/wire v0.7.0
 	github.com/lib/pq v1.12.3
+	github.com/makesalekz/utils v0.0.0-00010101000000-000000000000
 	github.com/nats-io/nats.go v1.52.0
 	github.com/shopspring/decimal v1.3.1
 	github.com/stretchr/testify v1.11.1
-	gitlab.calendaria.team/services/utils v0.0.0-00010101000000-000000000000
 	go.uber.org/automaxprocs v1.6.0
 	google.golang.org/grpc v1.81.1
 	google.golang.org/protobuf v1.36.11
@@ -56,4 +56,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace gitlab.calendaria.team/services/utils => ../utils
+replace github.com/makesalekz/utils => ../utils

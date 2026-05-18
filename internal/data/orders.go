@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"gitlab.calendaria.team/services/orders/ent"
-	"gitlab.calendaria.team/services/orders/ent/enum"
-	entorder "gitlab.calendaria.team/services/orders/ent/order"
-	utils_v1 "gitlab.calendaria.team/services/utils/api/utils/v1"
+	"github.com/makesalekz/orders/ent"
+	"github.com/makesalekz/orders/ent/enum"
+	entorder "github.com/makesalekz/orders/ent/order"
+	utils_v1 "github.com/makesalekz/utils/api/utils/v1"
 )
 
 type OrdersRepo interface {

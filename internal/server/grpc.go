@@ -1,9 +1,9 @@
 package server
 
 import (
-	v1 "gitlab.calendaria.team/services/orders/api/orders/v1"
-	"gitlab.calendaria.team/services/orders/internal/conf"
-	"gitlab.calendaria.team/services/orders/internal/service"
+	v1 "github.com/makesalekz/orders/api/orders/v1"
+	"github.com/makesalekz/orders/internal/conf"
+	"github.com/makesalekz/orders/internal/service"
 
 	"github.com/go-kratos/kratos/v2/middleware/metadata"
 	"github.com/go-kratos/kratos/v2/middleware/recovery"

@@ -5,12 +5,12 @@ package enttest
 import (
 	"context"
 
-	"gitlab.calendaria.team/services/orders/ent"
+	"github.com/makesalekz/orders/ent"
 	// required by schema hooks.
-	_ "gitlab.calendaria.team/services/orders/ent/runtime"
+	_ "github.com/makesalekz/orders/ent/runtime"
 
 	"entgo.io/ent/dialect/sql/schema"
-	"gitlab.calendaria.team/services/orders/ent/migrate"
+	"github.com/makesalekz/orders/ent/migrate"
 )
 
 type (

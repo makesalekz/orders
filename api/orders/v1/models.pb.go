@@ -347,7 +347,7 @@ const file_api_orders_v1_models_proto_rawDesc = "" +
 	"\tCONFIRMED\x10\x01\x12\v\n" +
 	"\aSHIPPED\x10\x02\x12\f\n" +
 	"\bACCEPTED\x10\x03\x12\f\n" +
-	"\bREJECTED\x10\x04B@Z>gitlab.calendaria.team/services/orders/api/orders/v1;orders_v1b\x06proto3"
+	"\bREJECTED\x10\x04B@Z>github.com/makesalekz/orders/api/orders/v1;orders_v1b\x06proto3"
 
 var (
 	file_api_orders_v1_models_proto_rawDescOnce sync.Once

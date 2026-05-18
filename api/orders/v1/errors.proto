@@ -4,7 +4,7 @@ package orders.v1;
 
 import "errors/errors.proto";
 
-option go_package = "gitlab.calendaria.team/services/orders/api/orders/v1;orders_v1";
+option go_package = "github.com/makesalekz/orders/api/orders/v1;orders_v1";
 
 enum ErrorReason {
   option (errors.default_code) = 500;
