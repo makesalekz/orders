@@ -7,7 +7,7 @@ require (
 	github.com/go-kratos/kratos/v2 v2.9.2
 	github.com/google/wire v0.7.0
 	github.com/lib/pq v1.12.3
-	github.com/makesalekz/utils v0.0.0-00010101000000-000000000000
+	github.com/makesalekz/utils v0.4.0
 	github.com/nats-io/nats.go v1.52.0
 	github.com/shopspring/decimal v1.3.1
 	github.com/stretchr/testify v1.11.1
@@ -55,5 +55,3 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260226221140-a57be14db171 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/makesalekz/utils => ../utils
