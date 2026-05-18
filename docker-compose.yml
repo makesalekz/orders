@@ -1,29 +1,12 @@
 services:
-  db:
-    image: postgres:15
-    container_name: orders_db
+  orders:
+    build: .
+    container_name: orders
+    restart: unless-stopped
     environment:
-      POSTGRES_USER: me
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: orders
-    ports:
-      - '5441:5432'
-    volumes:
-      - orders_data:/var/lib/postgresql/data
-
-  service:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    container_name: orders_service
-    ports:
-      - '8007:8000'
-      - '9007:9000'
-    depends_on:
-      - db
-    environment:
-      - AUTOMIGRATE=true
-    command: ["./app", "-conf", "config.yaml"]
-
-volumes:
-  orders_data:
+      - SERVICE_NAME=orders
+      - CONSUL_ADDRESS=${CONSUL_ADDRESS}
+      - VAULT_ADDRESS=${VAULT_ADDRESS}
+      - VAULT_DEV_ROOT_TOKEN_ID=${VAULT_DEV_ROOT_TOKEN_ID}
+      - DEBUG=${DEBUG}
+      - AUTOMIGRATE=${AUTOMIGRATE}
